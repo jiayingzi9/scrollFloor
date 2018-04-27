@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="scrollFloor.css">
+</head>
+<body>
+<div class="jf-lift-nav">
+    <ul class="jf-lift">
+        <li class="jf-current">1楼</li>
+        <li>2楼</li>
+        <li>3楼</li>
+        <li>4楼</li>
+        <li>5楼</li>
+        <li>6楼</li>
+    </ul>
+    <!--返回顶部-->
+    <ul>
+        <li class="jf-top" style="font-size:12px">返回</li>
+    </ul>
+</div>
+
+<div class="jf-lift-target">
+    <div class="t1">
+        <div  style="height:400px">第1楼</div>
+    </div>
+    <div class="t2">
+        <div  style="height:300px">第2楼</div>
+    </div>
+    <div class="t3">
+        <div  style="height:450px">第3楼</div>
+    </div>
+    <div class="t4">
+        <div  style="height:450px">第4楼</div>
+    </div>
+    <div class="t5">
+        <div  style="height:400px">第5楼</div>
+    </div>
+    <div class="t6">
+        <div  style="height:400px">第6楼</div>
+    </div>
+</div>
+<script src="jquery-1.12.4.js"></script>
+<script src="scrollFloor.js"></script>
+<script>
+    new window['scrollFloor']({
+        //以下类dom必须有
+        "control1": ".jf-lift-nav", 						  //侧栏电梯的容器
+        "control2": ".jf-lift",                           //需要遍历的电梯的父元素
+        "Backtop":".jf-top",
+        "target": [".t1",".t2",".t3",".t4",".t5",".t6"], //监听的内容，注意一定要从小到大输入
+        "current": "jf-current",
+    })
+</script>
+</body>
+</html>

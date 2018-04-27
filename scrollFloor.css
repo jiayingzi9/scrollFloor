@@ -1,0 +1,51 @@
+*{
+    margin:0;
+    padding: 0;
+    list-style-type: none;
+}
+.jf-lift-nav{
+    position: fixed;
+    top: 100px;
+    /*display: none;*/
+}
+.jf-lift-nav li{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    background: skyblue;
+    cursor: pointer;
+}
+
+.jf-lift-nav li.jf-current{
+    background:#af4040;
+}
+.jf-lift-target{
+
+}
+.t1,.t2,.t3,.t4,.t5,.t6{
+    border: 2px solid #ddd;
+    text-align: center;
+    font-size:30px;
+}
+/*.t1{*/
+    /*background: #cad96c;*/
+/*}*/
+/*.t2{*/
+    /*background: pink;*/
+/*}*/
+/*.t3{*/
+    /*background: tomato;*/
+/*}*/
+/*.t4{*/
+    /*background: grey;*/
+/*}*/
+/*.t5{*/
+    /*background: yellow;*/
+/*}*/
+/*.t6{*/
+    /*background: seagreen;*/
+/*}*/
